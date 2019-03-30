@@ -393,7 +393,10 @@ function respostaSair(r){
         $("#exibeFoto").attr('src', '');
         $("#novocadastro").hide();
         $("#btnCadastrar").attr('disabled', 'disabled');
+        $("input").val("");
         
         $("#logon").show();
+        
+        window.location.reload(true);
     }
 }
